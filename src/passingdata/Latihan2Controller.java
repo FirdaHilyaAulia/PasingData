@@ -10,6 +10,8 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 
 /**
@@ -20,11 +22,19 @@ import javafx.scene.control.TableColumn;
 public class Latihan2Controller implements Initializable {
 
     @FXML
-    private TableColumn<?, ?> nomer;
+    private TableColumn<?, ?> PlatNomorr;
     @FXML
-    private TableColumn<?, ?> kendaraan;
+    private TableColumn<?, ?> Kendaraaan;
     @FXML
-    private TableColumn<?, ?> parkir;
+    private TableColumn<?, ?> HrgaP;
+    @FXML
+    private Button metuu;
+    @FXML
+    private Label nomer;
+    @FXML
+    private Label kendaraan;
+    @FXML
+    private Label parkir;
 
     /**
      * Initializes the controller class.
@@ -34,15 +44,15 @@ public class Latihan2Controller implements Initializable {
         // TODO
     }    
 
-    public void setData(String pn,String dara,String np){
+    @FXML
+    private void metuuu(ActionEvent event) {
+        System.exit(0);
+    }
+
+    void setData(String pn, String dara, String np) {
     nomer.setText(pn);
     kendaraan.setText(dara);
-    parkir.setText(np);
-    }
-       @FXML
-    void metuuu(ActionEvent event) {
-         System.exit(0);
-
+    parkir.setText(np); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

@@ -5,6 +5,9 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="passingdata.Latihan2Controller">
@@ -16,11 +19,29 @@
       </Label>
       <TableView layoutX="127.0" layoutY="118.0" prefHeight="200.0" prefWidth="303.0">
         <columns>
-          <TableColumn fx:id="nomer" prefWidth="100.6666259765625" text="Plat Nomer" />
-          <TableColumn fx:id="kendaraan" prefWidth="107.3333740234375" text="Kendaraan" />
-            <TableColumn fx:id="parkir" prefWidth="95.6666259765625" text="Harga Parkir" />
+          <TableColumn fx:id="PlatNomorr" prefWidth="100.6666259765625" text="Plat Nomer" />
+          <TableColumn fx:id="Kendaraaan" prefWidth="107.3333740234375" text="Kendaraan" />
+            <TableColumn fx:id="HrgaP" prefWidth="95.6666259765625" text="Harga Parkir" />
         </columns>
       </TableView>
       <Button fx:id="metuu" layoutX="249.0" layoutY="343.0" mnemonicParsing="false" onAction="#metuuu" text="Exit" />
+      <GridPane layoutX="126.0" layoutY="143.0" prefHeight="90.0" prefWidth="303.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.33331298828125" minWidth="10.0" prefWidth="94.33331298828125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.3333740234375" minWidth="10.0" prefWidth="107.66668701171875" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="nomer" prefHeight="27.0" prefWidth="93.0" />
+            <Label fx:id="nomer" prefHeight="27.0" prefWidth="93.0" />
+            <Label fx:id="kendaraan" prefHeight="28.0" prefWidth="108.0" GridPane.columnIndex="1" />
+            <Label fx:id="parkir" prefHeight="29.0" prefWidth="100.0" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
    </children>
 </AnchorPane>
